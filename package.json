@@ -1,0 +1,24 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
+    "dev-frontend": "cd frontend && npm start",
+    "dev-backend": "cd backend && nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.0",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9",
+    "twilio": "^5.5.1"
+  }
+}
